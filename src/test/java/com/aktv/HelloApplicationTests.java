@@ -1,5 +1,6 @@
 package com.aktv;
 
+import com.aktv.pojo.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -19,6 +21,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class HelloApplicationTests {
     @Autowired
     private MockMvc mvc;
+    @Autowired
+    private Person person;
 
     @Test
     public void contextLoads() throws Exception {
@@ -27,4 +31,8 @@ public class HelloApplicationTests {
                 .andExpect(content().string("Greetings from Spring Boot!"));
     }
 
+    @Test
+    public void testPerson() {
+        System.out.println(person);
+    }
 }

@@ -1,0 +1,20 @@
+# 服务启动端口号
+server:
+  port: 8080
+# 配置person属性值
+person:
+  lastName: Darcy
+  age: 20
+  birth: 2018/01/01
+  email: gmail@gmail.com
+  maps:
+    key1: java
+    key2: golang
+  lists:
+    - a
+    - b
+    - c
+  dog:
+    name: 旺财
+    age: 2
+
