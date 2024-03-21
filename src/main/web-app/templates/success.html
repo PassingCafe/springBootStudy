@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>themlef</title>
+</head>
+<body>
+<h1>
+    <p th:each="item:${mylist}"><span th:text="${itemStat.index}"></span> 欢迎您：<span th:text="${item}"></span></p>
+</h1>
+</body>
+</html>

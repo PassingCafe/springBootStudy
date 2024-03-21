@@ -1,7 +1,18 @@
 # 服务启动端口号
 server:
   port: 8080
-# 配置person属性值
+  # 配置person属性值
+spring:
+  thymeleaf:
+    cache: false
+  #设置thymeleaf页面的编码
+    encoding: UTF-8
+    mode: HTML
+  #设置thymeleaf页面的后缀
+    suffix: .html
+  #设置thymeleaf页面的存储路径
+    prefix: classpath:/templates/
+
 person:
   lastName: Darcy
   age: 20
