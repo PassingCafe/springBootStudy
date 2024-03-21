@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 
@@ -18,5 +19,10 @@ public class HelloController {
         mylist.add("杜甫");
         model.addAttribute("mylist",mylist);
         return "success";
+    }
+    @RequestMapping("login")
+    @ResponseBody
+    public String getUser(){
+        return "登录成功";
     }
 }
