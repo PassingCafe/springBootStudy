@@ -6,26 +6,10 @@ spring:
   thymeleaf:
     cache: false
   #设置thymeleaf页面的编码
-    encoding: UTF-8
-    mode: HTML
+  #  encoding: UTF-8
+  #  mode: HTML
   #设置thymeleaf页面的后缀
-    suffix: .html
+  #  suffix: .html
   #设置thymeleaf页面的存储路径
-    prefix: classpath:/templates/
-
-person:
-  lastName: Darcy
-  age: 20
-  birth: 2018/01/01
-  email: gmail@gmail.com
-  maps:
-    key1: java
-    key2: golang
-  lists:
-    - a
-    - b
-    - c
-  dog:
-    name: 旺财
-    age: 2
+  #  prefix: classpath:/templates/
 
