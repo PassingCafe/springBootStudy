@@ -13,3 +13,7 @@ spring:
   #设置thymeleaf页面的存储路径
   #  prefix: classpath:/templates/
 
+logging:
+  config: src/main/web-app/logback.xml
+  level:
+    com.akv.dao: trace
