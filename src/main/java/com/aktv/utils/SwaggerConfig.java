@@ -1,4 +1,4 @@
-package com.aktv.dao;
+package com.aktv.utils;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
