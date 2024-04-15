@@ -1,9 +1,6 @@
 package com.aktv.utils;
 
-import com.aktv.dao.User;
-import lombok.Data;
 
-@Data
 public class JsonResult<T> {
     private T obj;
     private String code;
@@ -19,15 +16,25 @@ public class JsonResult<T> {
         this.msg = msg;
     }
 
-    public JsonResult(T obj,String code,String msg){
-        this.obj=obj;
-        this.code=code;
-        this.msg=msg;
-    }
-
     public JsonResult(T obj){
         this.obj = obj;
         this.code = "0";
         this.msg = "操作成功！";
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }
