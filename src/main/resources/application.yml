@@ -2,16 +2,27 @@
 server:
   port: 8080
   # 配置person属性值
+#数据库地址
+datasource:
+  url: localhost:3306/database
 spring:
+  datasource: #数据库配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${datasource.url}?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 10 #最大连接池数
+      max-lifetime: 1770000
   thymeleaf:
     cache: false
-  #设置thymeleaf页面的编码
-  #  encoding: UTF-8
-  #  mode: HTML
-  #设置thymeleaf页面的后缀
-  #  suffix: .html
-  #设置thymeleaf页面的存储路径
-  #  prefix: classpath:/templates/
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #驼峰命名规范
+  mapper-locations:
+    - classpath:mapper/*.xml
+  type-aliases-package: com.aktv.dao #别名扫描包
 
 logging:
   config: src/main/web-app/logback.xml

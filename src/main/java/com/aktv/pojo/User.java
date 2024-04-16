@@ -1,4 +1,4 @@
-package com.aktv.dao;
+package com.aktv.pojo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
