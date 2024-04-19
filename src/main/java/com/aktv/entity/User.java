@@ -1,4 +1,4 @@
-package com.aktv.pojo;
+package com.aktv.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

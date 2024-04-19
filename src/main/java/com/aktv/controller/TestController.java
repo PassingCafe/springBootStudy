@@ -1,6 +1,6 @@
 package com.aktv.controller;
 
-import com.aktv.pojo.User;
+import com.aktv.entity.User;
 import com.aktv.utils.JsonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;

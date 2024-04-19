@@ -25,6 +25,6 @@ mybatis:
   type-aliases-package: com.aktv.dao #别名扫描包
 
 logging:
-  config: src/main/web-app/logback.xml
+  config: classpath:logback.xml
   level:
     com.akv.dao: trace
